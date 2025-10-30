@@ -1,4 +1,4 @@
-import logo from "@/assets/guicheweb-logo.png";
+import logo from "@/assets/guicheweb-logo-oficial.png";
 
 const Header = () => {
   return (

@@ -82,34 +82,36 @@ const HeroSection = () => {
             className="bg-white/10 backdrop-blur-md p-8 rounded-2xl border border-white/20 shadow-2xl"
           >
             <div className="space-y-4">
-              <div>
-                <Label htmlFor="name" className="text-white">
-                  Nome completo *
-                </Label>
-                <Input
-                  id="name"
-                  type="text"
-                  placeholder="Seu nome completo"
-                  value={formData.name}
-                  onChange={(e) => setFormData({ ...formData, name: e.target.value })}
-                  className="bg-white/20 border-white/30 text-white placeholder:text-white/50 focus:border-primary"
-                  required
-                />
-              </div>
+              <div className="grid md:grid-cols-2 gap-4">
+                <div>
+                  <Label htmlFor="name" className="text-white">
+                    Nome completo *
+                  </Label>
+                  <Input
+                    id="name"
+                    type="text"
+                    placeholder="Seu nome completo"
+                    value={formData.name}
+                    onChange={(e) => setFormData({ ...formData, name: e.target.value })}
+                    className="bg-white/20 border-white/30 text-white placeholder:text-white/50 focus:border-primary"
+                    required
+                  />
+                </div>
 
-              <div>
-                <Label htmlFor="email" className="text-white">
-                  E-mail *
-                </Label>
-                <Input
-                  id="email"
-                  type="email"
-                  placeholder="seu@email.com"
-                  value={formData.email}
-                  onChange={(e) => setFormData({ ...formData, email: e.target.value })}
-                  className="bg-white/20 border-white/30 text-white placeholder:text-white/50 focus:border-primary"
-                  required
-                />
+                <div>
+                  <Label htmlFor="email" className="text-white">
+                    E-mail *
+                  </Label>
+                  <Input
+                    id="email"
+                    type="email"
+                    placeholder="seu@email.com"
+                    value={formData.email}
+                    onChange={(e) => setFormData({ ...formData, email: e.target.value })}
+                    className="bg-white/20 border-white/30 text-white placeholder:text-white/50 focus:border-primary"
+                    required
+                  />
+                </div>
               </div>
 
               <div>
