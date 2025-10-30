@@ -7,7 +7,7 @@ const Header = () => {
         <img 
           src={logo} 
           alt="GuichêWeb" 
-          className="h-8 md:h-10"
+          className="h-10 md:h-12"
         />
         <div className="text-xs md:text-sm text-white/80 text-center md:text-right">
           Pré-venda exclusiva – <span className="text-primary font-semibold">No Pelo Tour</span>

@@ -25,7 +25,7 @@ const MusicSection = () => {
             </div>
             <iframe 
               style={{ borderRadius: '12px' }} 
-              src="https://open.spotify.com/embed/artist/0uRkUKxvD5BjGAgHhFSX3X?utm_source=generator" 
+              src="https://open.spotify.com/embed/album/2nVexEqQ4NxAqL3sEdMkl0?utm_source=generator" 
               width="100%" 
               height="352" 
               frameBorder="0" 
@@ -46,8 +46,8 @@ const MusicSection = () => {
             <iframe 
               width="100%" 
               height="320" 
-              src="https://www.youtube.com/embed/videoseries?list=PLgPpF7C1MSz4zDVu2iXmpV4NfL1zNjQn_" 
-              title="Hugo & Guilherme" 
+              src="https://www.youtube.com/embed/videoseries?list=OLAK5uy_nVVbnAh8BhW5eJIEj-J5h4QKB2etkVXQ4" 
+              title="Hugo & Guilherme - No Pelo Tour" 
               frameBorder="0" 
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
               allowFullScreen
