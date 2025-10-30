@@ -3,7 +3,7 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { useToast } from "@/hooks/use-toast";
-import heroImage from "@/assets/hugo-guilherme-hero-oficial.png";
+import heroImage from "@/assets/hugo-guilherme-novo.png";
 
 const HeroSection = () => {
   const { toast } = useToast();
@@ -82,7 +82,7 @@ const HeroSection = () => {
             className="bg-white/10 backdrop-blur-md p-8 rounded-2xl border border-white/20 shadow-2xl"
           >
             <div className="space-y-4">
-              <div className="grid md:grid-cols-2 gap-4">
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
                 <div>
                   <Label htmlFor="name" className="text-white">
                     Nome completo *
@@ -112,20 +112,20 @@ const HeroSection = () => {
                     required
                   />
                 </div>
-              </div>
 
-              <div>
-                <Label htmlFor="phone" className="text-white">
-                  Telefone
-                </Label>
-                <Input
-                  id="phone"
-                  type="tel"
-                  placeholder="(00) 00000-0000"
-                  value={formData.phone}
-                  onChange={(e) => setFormData({ ...formData, phone: formatPhone(e.target.value) })}
-                  className="bg-white/20 border-white/30 text-white placeholder:text-white/50 focus:border-primary"
-                />
+                <div>
+                  <Label htmlFor="phone" className="text-white">
+                    Telefone
+                  </Label>
+                  <Input
+                    id="phone"
+                    type="tel"
+                    placeholder="(00) 00000-0000"
+                    value={formData.phone}
+                    onChange={(e) => setFormData({ ...formData, phone: formatPhone(e.target.value) })}
+                    className="bg-white/20 border-white/30 text-white placeholder:text-white/50 focus:border-primary"
+                  />
+                </div>
               </div>
 
               <Button 
