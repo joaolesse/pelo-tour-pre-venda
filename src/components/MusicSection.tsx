@@ -2,19 +2,19 @@ import { Music2, Youtube } from "lucide-react";
 
 const MusicSection = () => {
   return (
-    <section className="py-20 px-4 bg-gradient-to-b from-black to-secondary/20">
+    <section className="py-12 md:py-20 px-4 bg-gradient-to-b from-black to-secondary/20">
       <div className="container max-w-4xl mx-auto">
-        <div className="text-center mb-12 animate-fade-in">
-          <Music2 className="w-16 h-16 mx-auto mb-4 text-primary" />
-          <h2 className="text-4xl md:text-5xl font-display font-black text-white mb-4">
+        <div className="text-center mb-8 md:mb-12 animate-fade-in">
+          <Music2 className="w-12 h-12 md:w-16 md:h-16 mx-auto mb-4 text-primary" />
+          <h2 className="text-3xl md:text-4xl lg:text-5xl font-display font-black text-white mb-3 md:mb-4">
             Entre no clima do <span className="text-primary">No Pelo Tour</span>
           </h2>
-          <p className="text-base md:text-lg text-white/70 font-sans">
+          <p className="text-sm md:text-base lg:text-lg text-white/70 font-sans px-4">
             Ouça agora os maiores sucessos de Hugo & Guilherme enquanto garante sua vaga na pré-venda.
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8">
           {/* Spotify Player */}
           <div className="bg-white/5 backdrop-blur-sm p-6 rounded-2xl border border-white/10 hover:border-primary/50 transition-all">
             <div className="flex items-center gap-2 mb-4">

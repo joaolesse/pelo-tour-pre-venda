@@ -54,7 +54,7 @@ const HeroSection = () => {
 
   return (
     <section 
-      className="relative min-h-screen flex items-center justify-center pt-32 pb-12 px-4"
+      className="relative min-h-screen flex items-center justify-center pt-24 md:pt-32 pb-8 md:pb-12 px-4"
       style={{
         backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.8)), url(${heroImage})`,
         backgroundSize: 'cover',
@@ -62,16 +62,16 @@ const HeroSection = () => {
         backgroundAttachment: 'fixed',
       }}
     >
-      <div className="container max-w-2xl mx-auto animate-fade-in">
-        <div className="text-center mb-8">
-          <h1 className="text-4xl md:text-6xl font-display font-black text-white mb-4 leading-tight tracking-tight">
+      <div className="container max-w-2xl mx-auto animate-fade-in px-4">
+        <div className="text-center mb-6 md:mb-8">
+          <h1 className="text-3xl md:text-5xl lg:text-6xl font-display font-black text-white mb-3 md:mb-4 leading-tight tracking-tight">
             Garanta seu acesso antecipado à pré-venda do show{" "}
             <span className="bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
               Hugo & Guilherme
             </span>
           </h1>
-          <p className="text-xl md:text-2xl text-white/90 mb-2 font-display font-bold">No Pelo Tour</p>
-          <p className="text-base md:text-lg text-white/70 font-sans">
+          <p className="text-lg md:text-xl lg:text-2xl text-white/90 mb-2 font-display font-bold">No Pelo Tour</p>
+          <p className="text-sm md:text-base lg:text-lg text-white/70 font-sans">
             Cadastre-se e seja o primeiro a receber o link de compra oficial.
           </p>
         </div>
@@ -79,10 +79,10 @@ const HeroSection = () => {
         {!submitted ? (
           <form 
             onSubmit={handleSubmit}
-            className="bg-white/10 backdrop-blur-md p-8 rounded-2xl border border-white/20 shadow-2xl"
+            className="bg-white/10 backdrop-blur-md p-4 md:p-8 rounded-2xl border border-white/20 shadow-2xl"
           >
             <div className="space-y-4">
-              <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-3 md:gap-4">
                 <div>
                   <Label htmlFor="name" className="text-white">
                     Nome completo *
@@ -130,32 +130,32 @@ const HeroSection = () => {
 
               <Button 
                 type="submit"
-                className="w-full bg-gradient-to-r from-primary to-accent hover:opacity-90 text-white font-display font-bold py-6 text-lg rounded-xl animate-glow-pulse shadow-lg"
+                className="w-full bg-gradient-to-r from-primary to-accent hover:opacity-90 text-white font-display font-bold py-5 md:py-6 text-base md:text-lg rounded-xl animate-glow-pulse shadow-lg"
               >
                 Quero participar da pré-venda
               </Button>
             </div>
           </form>
         ) : (
-          <div className="bg-primary/10 backdrop-blur-md p-8 rounded-2xl border border-primary/30 text-center space-y-6">
-            <div className="text-6xl mb-4">🎟️</div>
-            <h2 className="text-2xl font-bold text-white mb-2">
+          <div className="bg-primary/10 backdrop-blur-md p-6 md:p-8 rounded-2xl border border-primary/30 text-center space-y-4 md:space-y-6">
+            <div className="text-5xl md:text-6xl mb-4">🎟️</div>
+            <h2 className="text-xl md:text-2xl font-bold text-white mb-2">
               Você está na lista VIP da pré-venda!
             </h2>
-            <p className="text-white/80 mb-6">
+            <p className="text-sm md:text-base text-white/80 mb-4 md:mb-6">
               Aguarde novidades no seu e-mail.
             </p>
             
             <div className="pt-4 border-t border-white/20">
-              <p className="text-white/90 font-semibold mb-4">
+              <p className="text-base md:text-lg text-white/90 font-semibold mb-3 md:mb-4">
                 📱 Entre no grupo exclusivo do WhatsApp
               </p>
-              <p className="text-white/70 text-sm mb-4">
+              <p className="text-xs md:text-sm text-white/70 mb-3 md:mb-4">
                 Receba em primeira mão todas as informações sobre a pré-venda!
               </p>
               <Button
                 onClick={() => window.open('https://chat.whatsapp.com/seu-link-do-grupo', '_blank')}
-                className="bg-[#25D366] hover:bg-[#20BA5A] text-white font-bold py-6 px-8 text-lg rounded-xl transition-all"
+                className="bg-[#25D366] hover:bg-[#20BA5A] text-white font-bold py-5 md:py-6 px-6 md:px-8 text-base md:text-lg rounded-xl transition-all w-full md:w-auto"
               >
                 <svg 
                   className="w-6 h-6 mr-2" 
