@@ -3,7 +3,7 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { useToast } from "@/hooks/use-toast";
-import heroImage from "@/assets/hugo-guilherme-oficial.jpg";
+import heroImage from "@/assets/hugo-guilherme-hero-oficial.png";
 
 const HeroSection = () => {
   const { toast } = useToast();
