@@ -6,10 +6,10 @@ const MusicSection = () => {
       <div className="container max-w-4xl mx-auto">
         <div className="text-center mb-12 animate-fade-in">
           <Music2 className="w-16 h-16 mx-auto mb-4 text-primary" />
-          <h2 className="text-4xl md:text-5xl font-bold text-white mb-4">
+          <h2 className="text-4xl md:text-5xl font-display font-black text-white mb-4">
             Entre no clima do <span className="text-primary">No Pelo Tour</span>
           </h2>
-          <p className="text-lg text-white/70">
+          <p className="text-base md:text-lg text-white/70 font-sans">
             Ouça agora os maiores sucessos de Hugo & Guilherme enquanto garante sua vaga na pré-venda.
           </p>
         </div>

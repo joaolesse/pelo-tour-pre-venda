@@ -64,14 +64,14 @@ const HeroSection = () => {
     >
       <div className="container max-w-2xl mx-auto animate-fade-in">
         <div className="text-center mb-8">
-          <h1 className="text-4xl md:text-6xl font-bold text-white mb-4 leading-tight">
+          <h1 className="text-4xl md:text-6xl font-display font-black text-white mb-4 leading-tight tracking-tight">
             Garanta seu acesso antecipado à pré-venda do show{" "}
             <span className="bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
               Hugo & Guilherme
             </span>
           </h1>
-          <p className="text-xl text-white/90 mb-2">No Pelo Tour</p>
-          <p className="text-lg text-white/70">
+          <p className="text-xl md:text-2xl text-white/90 mb-2 font-display font-bold">No Pelo Tour</p>
+          <p className="text-base md:text-lg text-white/70 font-sans">
             Cadastre-se e seja o primeiro a receber o link de compra oficial.
           </p>
         </div>
@@ -128,7 +128,7 @@ const HeroSection = () => {
 
               <Button 
                 type="submit"
-                className="w-full bg-gradient-to-r from-primary to-accent hover:opacity-90 text-white font-bold py-6 text-lg rounded-xl animate-glow-pulse"
+                className="w-full bg-gradient-to-r from-primary to-accent hover:opacity-90 text-white font-display font-bold py-6 text-lg rounded-xl animate-glow-pulse shadow-lg"
               >
                 Quero participar da pré-venda
               </Button>

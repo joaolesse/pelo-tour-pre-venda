@@ -58,6 +58,10 @@ export default {
           ring: "hsl(var(--sidebar-ring))",
         },
       },
+      fontFamily: {
+        sans: ['Poppins', 'ui-sans-serif', 'system-ui', 'sans-serif'],
+        display: ['Montserrat', 'ui-sans-serif', 'system-ui', 'sans-serif'],
+      },
       borderRadius: {
         lg: "var(--radius)",
         md: "calc(var(--radius) - 2px)",
@@ -92,10 +96,10 @@ export default {
         },
         "glow-pulse": {
           "0%, 100%": {
-            boxShadow: "0 0 20px hsla(24, 100%, 50%, 0.4)"
+            boxShadow: "0 0 20px hsla(0, 100%, 50%, 0.4)"
           },
           "50%": {
-            boxShadow: "0 0 40px hsla(24, 100%, 50%, 0.6)"
+            boxShadow: "0 0 40px hsla(0, 100%, 50%, 0.6)"
           }
         }
       },
